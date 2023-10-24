@@ -3,16 +3,23 @@
 * {
   box-sizing: border-box;
 }
-/*home-page*/
 
-/* ssdsdsdds */
 html,
 body {
   margin: 0;
   padding: 0;
   font-family: Poppins;
+  overflow-x: hidden;
 }
-
+body {
+  position: relative
+}
+.burger-menu {
+  display: none;
+  font-size: 24px;
+  color: #fff;
+  padding: 20px;
+}
 .body-home {
   background: black;
   overflow-x: hidden;
@@ -27,22 +34,37 @@ footer {
   background-color: black;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-x: hidden;
 }
+
+/*home-page*/
+
 header {
+  /* position: fixed; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: transparent;
+  /* background-color: transparent; */
+  width: 100%;
+  z-index: 1;
 }
 nav a {
   text-decoration-line: none;
   color: #fdfff7;
-  margin-left: 30px;
   font-family: Metal Mania;
+  padding: 20px 20px 10px 20px;
 }
 
 nav {
-  margin-right: 10%;
+  margin-right: 20px;
+}
+
+/* .welcome{
+  margin-top: 7%;
+} */
+
+.balls{
+  margin: 3% 0;
 }
 
 .home-image img {
@@ -51,12 +73,12 @@ nav {
   margin-top: 25%;
 }
 
-.poster-bg{
+.poster-bg {
   background-color: white;
   padding-top: 3%;
 }
 
-.good-review{
+.good-review {
   padding-top: 3%;
 }
 
@@ -66,7 +88,7 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  margin-top: 10%;
+  height: 100vh;
 }
 
 .text p {
@@ -122,10 +144,6 @@ nav {
   width: 20%;
 }
 
-.main,
-.balls {
-  margin-bottom: 8%;
-}
 .follow-us {
   font-family: Poppins;
   font-size: 24px;
@@ -226,10 +244,9 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-
 }
 
-.rayman{
+.rayman {
   display: flex;
   flex-direction: row-reverse;
 }
@@ -361,7 +378,7 @@ h1 {
 /* End of tournaments */
 /* start of registre */
 
-video{
+video {
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -416,9 +433,13 @@ form {
   width: 50%;
   margin-top: 10%;
   height: 25px;
-  background-color: #120707fe;
-  color: #fff;
+  background-color: #faf8f8fe;
+  color: #010000;
   cursor: pointer;
+}
+.submit:hover{
+  background-color: rgb(176, 4, 4);
+  color: aliceblue;
 }
 
 form {
@@ -429,9 +450,8 @@ form {
 input::placeholder {
   color: black;
 }
-input:hover {
-  background: #fff;
-  color: black;
+.fa-bars {
+  color: #fdfff7;
 }
 i {
   color: #fff;
@@ -571,4 +591,34 @@ select {
   .form-container {
     width: 60%;
   }
+  .burger-menu {
+    display: block;
+  }
+  nav {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    left: 100%;
+    margin-top: 75px;
+    text-align: center;
+    transition: 0.4s;
+    backdrop-filter: blur(20px);
+  }
+
+  .diver:hover nav {
+    left: 0;
+  }
+
+  header {
+    justify-content: space-between;
+  }
+
+  header img{
+    margin-left: 10px;
+  }
+
+  /* .welcome{
+    margin-top: 20%;
+  } */
 }

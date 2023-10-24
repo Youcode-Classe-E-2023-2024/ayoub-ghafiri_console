@@ -13,15 +13,20 @@
     <source src="images/Video-bg.mp4" type="video/mp4">
   </video>
      <!-- nav bar start --> 
-        <header>
-          <img src="images/logo-cnsole2.png" alt="logo" />
-          <nav>
-            <a href="index.html">HOME</a>
-            <a href="reviews.html">REVIEWS</a>
-            <a href="news.html">NEWS</a>
-            <a href="tournaments.html">TOURNAMENTS</a>
-          </nav>
-        </header>
+     <header>
+      <img src="images/logo-cnsole2.png" alt="logo" />
+      
+      <div class="diver">
+      <nav>
+        
+        <a href="index.html">HOME</a>
+        <a href="reviews.html">REVIEWS</a>
+        <a href="news.html">NEWS</a>
+        <a href="tournaments.html">TOURNAMENTS</a>
+      </nav>
+      <div class="burger-menu">&#9776;</div>
+    </div>
+    </header>
         <!-- nav bar end -->
 
             <div class="form-container">
@@ -31,16 +36,17 @@
                  <input style="font-family: FontAwesome;" type="text" placeholder="Enter your full name    &#xf007;" required>
               </div>
               <div class="input-box">
-                <input style="font-family: FontAwesome;" type="mail" placeholder="Enter your mail                &#xf0e0;">
+                <input style="font-family: FontAwesome;" type="mail" required placeholder="Enter your mail                &#xf0e0;">
               </div>
               <div class="input-box">
                 <label for="date"> enter you birthday <br>
-                <input style="font-family: FontAwesome;" type="date"> 
+                <input style="font-family: FontAwesome;" required type="date"> 
               </div>
             </label>
     
               <label for="tournaments" >select the tournament</label>
               <select style="font-family: FontAwesome;" name="tournaments">
+                <option value="" hidden>Select</option>
                 <option value="spain2023">spain 2023</option>
                 <option value="Tokyo">Tokyo</option>
                 <option value="brazil">brazil</option>
