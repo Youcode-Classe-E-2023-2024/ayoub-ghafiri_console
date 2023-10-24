@@ -1,0 +1,574 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&family=Metal+Mania&family=Nosifer&family=Poppins&family=REM:wght@100;400&family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,700;1,900&family=Rubik&family=Urbanist:ital,wght@1,300&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+/*home-page*/
+
+/* ssdsdsdds */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+}
+
+.body-home {
+  background: black;
+  overflow-x: hidden;
+}
+
+footer {
+  background-color: white;
+}
+
+.news-body {
+  color: white;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+}
+nav a {
+  text-decoration-line: none;
+  color: #fdfff7;
+  margin-left: 30px;
+  font-family: Metal Mania;
+}
+
+nav {
+  margin-right: 10%;
+}
+
+.home-image img {
+  width: 100%;
+  height: auto;
+  margin-top: 25%;
+}
+
+.poster-bg{
+  background-color: white;
+  padding-top: 3%;
+}
+
+.good-review{
+  padding-top: 3%;
+}
+
+.main {
+  background-image: url(images/galaxy.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: 10%;
+}
+
+.text p {
+  color: #fff;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  -webkit-text-stroke: 1px black;
+}
+
+.text h1 {
+  color: #000;
+  font-family: Nosifer;
+  font-size: clamp(40px, 7vw, 72px);
+  font-style: normal;
+  font-weight: 1000;
+  line-height: normal;
+  -webkit-text-stroke: 1px white;
+}
+
+.all-cercles {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  color: #fff;
+}
+
+.all-cercles img {
+  width: 30%;
+  height: auto;
+}
+.all-cercles img:hover {
+  box-shadow: 5px 5px 10px rgb(11, 10, 11);
+  border-radius: 60%;
+  transform: scale(1.04);
+  cursor: pointer;
+}
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+}
+
+.follow-us {
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.socials img {
+  width: 20%;
+}
+
+.main,
+.balls {
+  margin-bottom: 8%;
+}
+.follow-us {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+/*reviews*/
+
+.reviews-titles {
+  text-align: center;
+  color: #fff;
+}
+.reviews-titles h2,
+.lowest-reviews-title {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 5%;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10%;
+  box-shadow: 10px 10px 10px red;
+}
+.right-card {
+  animation: slideleft 0.5s ease;
+}
+.left-card {
+  animation: slideright 0.5s ease;
+}
+
+.card:hover {
+  transform: scale(1.04);
+  cursor: pointer;
+}
+
+.lowest-reviews .card {
+  background-color: #000;
+  color: #fff;
+}
+
+.rating-card {
+  width: 15%;
+  height: auto;
+  margin-top: 2%;
+}
+
+.game-img {
+  width: 100%;
+  object-fit: contain;
+  height: 400px;
+}
+
+.card p {
+  text-align: center;
+}
+
+.games-title {
+  font-style: italic;
+  font-size: 24px;
+  font-weight: 900;
+}
+.fc24-bg {
+  background-image: url(images/champions.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.game-descr-blck,
+.games-title-blck {
+  color: #fdfff7;
+}
+.fc24-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 3%;
+}
+
+.game-descr-blck {
+  margin: 9% 0;
+}
+
+.fc24-bg2 p,
+.fc24-bg2 h2 {
+  color: #fff;
+}
+
+.fc24-bg2 {
+  background-image: url(images/rayman.jfif);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+.rayman{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/* news page */
+.news-titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 5%;
+}
+.news-titles h2 {
+  margin-top: 5%;
+}
+
+.the-whole-gaming-news-section {
+  background-color: #fff;
+  color: #000;
+  padding-top: 5%;
+}
+
+.poster img {
+  width: 150%;
+  box-shadow: 10px 10px 10px rgb(161, 86, 230);
+  border-radius: 20px;
+  margin-bottom: 10%;
+}
+.poster img:hover {
+  transform: scale(1.04);
+  cursor: pointer;
+}
+.poster p {
+  font-family: Itim, sans-serif;
+  font-size: 24px;
+  text-align: center;
+}
+
+.poster {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section h2 {
+  text-align: center;
+  margin-top: 12%;
+  margin-bottom: 5%;
+  font-style: italic;
+}
+
+/* Tournaments */
+
+iframe {
+  width: 560px;
+  height: 315px;
+}
+.tournaments-titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 5%;
+}
+.tournaments-titles p {
+  font-size: 24px;
+  margin-bottom: 5%;
+}
+.tournaments-p2 {
+  margin-top: 5%;
+}
+
+.tournaments-container {
+  background-color: #fdfff7;
+  color: #000;
+  margin: 5% 0;
+}
+
+.tournaments-poster img {
+  width: 100%;
+  object-fit: contain;
+  height: 268px;
+}
+
+.tournaments-poster {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 7%;
+}
+.p1 {
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 25px;
+}
+.p2,
+button p {
+  font-weight: bold;
+  font-size: 16px;
+}
+button {
+  border-radius: 12px;
+  background: #4fac14;
+  color: #fff;
+  border: none;
+  width: 30%;
+}
+button:hover {
+  transform: scale(1.04);
+  background-color: #000;
+  box-shadow: 5px 5px 10px rgb(7, 250, 23);
+}
+nav a:hover {
+  transform: scale(1.04);
+  color: #f20b0b;
+  border-bottom: 2px white solid;
+}
+
+.watch-streams-container p {
+  text-align: center;
+  font-size: 25px;
+  padding-bottom: 5%;
+}
+h1 {
+  font-family: Nosifer;
+}
+
+/* End of tournaments */
+/* start of registre */
+
+video{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.form-container {
+  background-color: transparent;
+  filter: brightness(70%);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-radius: 20px;
+}
+.form-container P {
+  color: #fdfff7;
+  font-family: Nosifer;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3%;
+}
+.input-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 5% 0;
+}
+.input-box input {
+  border-radius: 20px;
+  border: none;
+  height: 25px;
+  padding: 15px 0 15px 15px;
+  width: 100%;
+}
+
+.submit {
+  border-radius: 20px;
+  border: none;
+  width: 50%;
+  margin-top: 10%;
+  height: 25px;
+  background-color: #120707fe;
+  color: #fff;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  align-items: center;
+}
+
+input::placeholder {
+  color: black;
+}
+input:hover {
+  background: #fff;
+  color: black;
+}
+i {
+  color: #fff;
+}
+.form-container P:hover {
+  color: red;
+  cursor: default;
+}
+button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+label {
+  color: #fff;
+  padding-bottom: 5%;
+  font-family: Metal Mania;
+  width: 100%;
+}
+select {
+  width: 100%;
+  padding: 3% 5%;
+  border-radius: 10px;
+  background-color: grey;
+}
+
+/* end of registre */
+/* animation */
+@keyframes slideleft {
+  from {
+    transform: translateX(+100px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes slideright {
+  from {
+    transform: translateX(-100px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+/* animation */
+
+/*responsive*/
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* For mobile */
+  .fc24-desc {
+    align-items: center;
+  }
+  .game-descr-blck {
+    text-align: center;
+  }
+  .rayman {
+    display: inline;
+  }
+  .poster img {
+    width: 90%;
+  }
+  section h2 {
+    text-align: center;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    font-style: italic;
+  }
+  iframe {
+    width: 100%;
+    height: 290px;
+  }
+  .form-container {
+    margin-top: 30%;
+  }
+  header img {
+    width: 100px;
+  }
+  .input-box input::placeholder {
+    font-size: 9px;
+    text-align: center;
+  }
+  form {
+    padding: 10%;
+  }
+  .form-container {
+    width: 60%;
+  }
+}
