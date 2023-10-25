@@ -12,7 +12,7 @@ body {
   overflow-x: hidden;
 }
 body {
-  position: relative
+  position: relative;
 }
 .burger-menu {
   display: none;
@@ -34,7 +34,6 @@ footer {
   background-color: black;
   background-repeat: no-repeat;
   background-size: cover;
-  overflow-x: hidden;
 }
 
 /*home-page*/
@@ -63,7 +62,7 @@ nav {
   margin-top: 7%;
 } */
 
-.balls{
+.balls {
   margin: 3% 0;
 }
 
@@ -438,7 +437,7 @@ form {
   color: #010000;
   cursor: pointer;
 }
-.submit:hover{
+.submit:hover {
   background-color: rgb(176, 4, 4);
   color: aliceblue;
 }
@@ -616,7 +615,7 @@ select {
     justify-content: space-between;
   }
 
-  header img{
+  header img {
     margin-left: 10px;
   }
 
